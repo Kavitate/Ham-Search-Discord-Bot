@@ -17,7 +17,7 @@ Prior to using the bot, the following variables must be updated:
 
 ## Command
 Once the above variables have been updated, run the bot using the following command:
-- `/ham` followed by a callsign to get information about the callsign. For example, `/ham KE8WRF`.
+- `/ham` followed by a callsign to get information about the callsign.
 
 ## Credits
 API credit to https://callook.info/.
