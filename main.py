@@ -22,6 +22,7 @@ def load_config():
 
 config = load_config()
 discord_bot_token = config["discord_bot_token"]
+server_id = config["server_id"]
 
 class HamSearch(discord.Client):
     def __init__(self, *, intents: discord.Intents):
@@ -29,8 +30,8 @@ class HamSearch(discord.Client):
         self.tree = app_commands.CommandTree(self)
 
     async def command_tree(self):
-        self.tree.copy_global_to(guild=discord.Object(id=YOUR_DISCORD_SERVER_ID))
-        await self.tree.sync(guild=discord.Object(id=YOUR_DISCORD_SERVER_ID))
+        self.tree.copy_global_to(guild=discord.Object(id=server_id))
+        await self.tree.sync(guild=discord.Object(id=server_id))
 
 client = HamSearch(intents=discord.Intents.default())
 
