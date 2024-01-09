@@ -59,7 +59,7 @@ async def ham(interaction: discord.Interaction, callsign: str):
     embed.add_field(name="Name", value=data['name'], inline=False)
     embed.add_field(name="Address", value=f"{data['address']['line1']}, {data['address']['line2']}", inline=False)
     embed.add_field(name="Grant Date", value=data['otherInfo']['grantDate'], inline=False)
-    embed.add_field(name="Expiry Date", value=data['otherInfo']['expiryDate'], inline=False)
+    embed.add_field(name="Expiration Date", value=data['otherInfo']['expiryDate'], inline=False)
     embed.add_field(name="Gridsquare", value=data['location']['gridsquare'], inline=False)
 
     # Create a hyperlink to Google Maps using the coordinates
