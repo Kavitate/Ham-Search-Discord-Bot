@@ -13,7 +13,7 @@ The bot also logs all of the callsign searches, but can be removed if logging is
 ## Variables
 Prior to using the bot, the following variables must be updated:
 - In the `config.json` file remove `YOUR_DISCORD_BOT_TOKEN_HERE` and replace it with your Discord bot token.
-- Lines `32` and `33` replace `YOUR_DISCORD_SERVER_ID` with the server Discord server ID you want the bot to be in.
+- In the `config.json` file remove `YOUR_DISCORD_SERVER_ID` with the Discord server ID you want the bot to be in.
 
 ## Command
 Once the above variables have been updated, run the bot using the following command:
