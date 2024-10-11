@@ -9,7 +9,7 @@ The bot also logs all command searches, but can be removed if logging is not nee
 </p>
 
 ## Variables
-Prior to using the bot, the following variables must be updated in the `confog.json` file:
+Prior to using the bot, the following variables must be updated in the `config.json` file:
 - Replace `YOUR_DISCORD_BOT_TOKEN_HERE` with your Discord bot token.
 - Replace `YOUR_DISCORD_SERVER_ID` with the Discord server ID you want the bot to be in.
 
