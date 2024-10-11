@@ -4,7 +4,6 @@ import json
 import logging
 import aiohttp
 import datetime
-import os
 from bs4 import BeautifulSoup
 import re
 from math import radians, sin, cos, sqrt, atan2
@@ -24,8 +23,8 @@ def load_config():
         raise
 
 config = load_config()
-discord_bot_token = os.environ["discord_bot_token"]
-server_id = os.environ['server_id']
+discord_bot_token = config["discord_bot_token"]
+server_id = config['server_id']
 
 class HamSearch(discord.Client):
     def __init__(self):
@@ -170,7 +169,7 @@ async def distance(interaction: discord.Interaction, callsign1: str, callsign2: 
 
 def run_discord_bot():
     try:
-        client.run(os.environ["discord_bot_token"])
+        client.run(config["discord_bot_token"])
     except Exception as e:
         logging.error(f"An error occurred while running the bot: {e}")
     finally:
